@@ -26,14 +26,14 @@
     padding: 0;
     /* depend on browsers */
     scrollbar-color: var(--color3) var(--color4);
+    /* if you use anchors to the page's sections */
+    scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Lato', sans-serif;
     color: var(--color1);
     word-wrap: break-word;
 }
-
 h1,
 h2,
 h3,
@@ -42,154 +42,47 @@ h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
 }
-
 a {
     text-decoration: none;
     color: var(--color1);
 }
-
 a, button{
-    transition: all ease-in;
+    transition: all ease-in-out;
 }
-
 a:hover,
 button:hover {
     opacity: 0.7;
     cursor: pointer;
 }
-
-li a:hover{
+button {
+    padding: 15px;
+    margin: 30px;
+    background-color: var(--color3);
+    color: var(--color7);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+nav li a:hover{
     text-decoration: underline solid var(--color6) 2px;
+    opacity: 1;
 }
 
 /* NAVBAR */
 header nav{
     display: flex;
     /* to stack elements on smaller screens */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     padding: 10px;
-    /* OU margin: 5px; */
     background-color: var(--color7);
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-
     /* fixed navbar */
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
 }
-header nav .nav-logo {
-    display: inline-block;
-    width: 150px;
-}
-
-header nav img{
-    width: inherit;
-    height: auto;
-}
-
-header nav .onglets{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-header nav .onglets li,
-.onglets input,
-.onglets .nav-icon{
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-header nav .onglets .nav-icon a{
-    margin-right: 10px;
-}
-
-header nav ul li{
-    display: inline-block;
-}
-
-/* search bar */
-header nav .onglets input{
-    margin: -10px 15px;
-    padding: 15px;
-    border-radius: 30px;
-    border: none;
-    /* outline = border that appears on click */
-    outline: none;
-    background-color: var(--color2);
-}
-/* END NAVBAR */
-
-/* BANNER */
-header .banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-header .banner h1{
-    font-size: 3rem;
-    max-width: 500px;
-    text-align: center;
-}
-header .banner button{
-    padding: 15px 20px;
-    margin-top: 15px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    /* a border still appears on some browsers on click */
-    outline: none;
-    background-color: var(--color3);
-    color: var(--color2);
-}
-/* END BANNER */
-
-/* MAIN SECTION */
-.main-container{
-    /* to center container */
-    margin: 20px;
-
-    margin-top: 80px;
-    display: flex;
-    /* CHANGE THIS FOR 6 CARDS */
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Product cards */
-.product-cards{
-    display: flex;
-    flex-wrap: wrap;
-}
-.product-cards .card{
-    width: 30%;
-    margin: auto 20px;
-    /* cursor: pointer; */
-}
-.product-cards .card img{
-    width: 350px;
-}
-.product-cards .card .card-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.product-cards .card .card-body p{
-    margin-top: 10px;
-}
-.product-cards .card .card-body button{
-    padding: 15px;
-    background-color: var;
-    border: none;
-    border-radius: 3px;
-    color: var;
-}
-/* End Product Cards */
-
-/* END MAIN SECTION */
