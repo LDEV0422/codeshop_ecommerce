@@ -1,1 +1,16 @@
 /* RESPONSIVE STYLESHEET: MOBILE */
+@media screen and (max-width: 576px) {
+    .products-section .card .card-img {
+        width: 250px;
+        height: 250px;
+    }
+    .products-section .card .card-img img{
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .contact-section{
+        width: 80vw;
+    }
+}

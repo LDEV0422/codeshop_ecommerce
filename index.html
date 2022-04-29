@@ -12,13 +12,14 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./css/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile_styles.css">
 </head>
 
-<body id="top">
+<body >
     <!-- Header -->
-    <header>
+    <header id="top">
         <!-- Navbar -->
-        <nav>
+        <nav >
             <a href="#" class="nav-logo">
                 <img src="./assets/brand/logo_blackname.png" alt="codeshop logo">
             </a>
@@ -58,10 +59,10 @@
     <!-- Main Container -->
     <div class="main-container">
         <!-- Product Cards -->
-        <div class="section-title">
+        <div class="section-title" id="productsSection">
             <h2>Our selection of products</h2>
         </div>
-        <section class="products-section" id="productsSection">
+        <section class="products-section">
             <div class="card">
                 <div class="card-img">
                     <img src="./assets/products/product1_pop-out-menu.gif" alt="product img">
@@ -143,10 +144,10 @@
         </section>
         <!-- End Product Cards -->
         <!-- Contact Form -->
-        <div class="section-title">
+        <div class="section-title" id="contactSection">
             <h2>Let us know about our products</h2>
         </div>
-        <section class="contact-section" id="contactSection">
+        <section class="contact-section">
             <form>
                 <div class="form-block">
                     <legend class="required">*All fields are required*</legend>
@@ -158,7 +159,7 @@
                     <label for="">Please Confirm E-mail*</label>
                     <input type="text" required>
                 </div>
-                <div class="form-block">
+                <div class="form-block" id="test">
                     <fieldset>
                         <legend>Object*:</legend>
                         <select name="inquiries" id="inquiry-select" required>

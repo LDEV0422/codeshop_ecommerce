@@ -34,6 +34,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--color1);
     word-wrap: break-word;
+
 }
 
 /* Back To Top */
@@ -42,16 +43,19 @@ body {
     bottom: 3rem;
     right: 2rem;
 }
+
 .back-top-link {
     position: -webkit-fixed;
     /* for Safari */
     position: fixed;
-    top: 90vh;  
+    top: 90vh;
     color: var(--color6);
     font-size: 30px;
     right: 15px;
 }
+
 /* End Back To Top */
+
 h1,
 h2,
 h3,
@@ -95,7 +99,7 @@ button {
     outline: none;
 }
 
-nav li a:hover {
+li a:hover {
     text-decoration: underline solid var(--color6) 2px;
     opacity: 1;
 }
@@ -113,6 +117,8 @@ header nav {
     position: fixed;
     top: 0;
     width: 100%;
+    /* ANCHOR SCROLL TO SECTION */
+    height: 200px;
 }
 
 header nav .onglets {
@@ -160,6 +166,7 @@ header .banner {
     align-items: center;
     text-align: center;
     height: 100vh;
+    margin: 100px 50px auto 50px;
 }
 
 header .banner h1 {
@@ -169,6 +176,10 @@ header .banner h1 {
 header .banner button {
     margin: 40px 30px;
     font-size: 20px;
+}
+
+header .banner button a {
+    color: var(--color7);
 }
 
 /* END BANNER */
@@ -184,6 +195,8 @@ header .banner button {
 /* SECTIONS */
 .section-title {
     margin-top: 150px;
+    /* ANCHOR SCROLL TO SECTION */
+    padding-top: 200px;
 }
 
 /* PRODUCTS SECTION */
@@ -192,9 +205,9 @@ header .banner button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin: 0;
-    padding: 1rem;  */
-}
+    margin: 0 auto;
+} 
+
 
 .products-section .card {
     margin: 10px 5px;
@@ -224,6 +237,7 @@ button {
 .contact-section .form-block {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 /* form borders */
@@ -237,9 +251,11 @@ select {
     margin: 10px 0;
 }
 
-.contact-section .form-block fieldset {
+.contact-section .form-block fieldset{
     margin: 20px 0;
     border: none;
+    /* the element is in row originally so use align */
+    align-self: center;
 }
 
 /* end form borders */
@@ -249,12 +265,11 @@ select {
 
 .contact-section .form-block select {
     color: var(--color1);
-    outline: 1px solid var(--color6);
     cursor: pointer;
 }
 
-.contact-section .form-block>select,
-textarea::placeholder {
+.contact-section .form-block select,
+.contact-section .form-block textarea::placeholder {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
@@ -266,6 +281,7 @@ textarea::placeholder {
     margin-bottom: 20px;
 }
 
+/* gdpr */
 .contact-section .form-block .gdpr-text {
     font-size: 1rem;
 }
@@ -282,7 +298,8 @@ textarea::placeholder {
 }
 
 .contact-section .form-block .gdpr-consent a {
-    color: var(--color6);
+    color: var(--color3);
+    font-weight: bold;
 }
 
 /* END CONTACT SECTION */
@@ -312,7 +329,6 @@ footer .links ul li {
 }
 
 footer .links ul li a {
-    text-decoration: underline solid var(--color6) 2px;
     max-width: 80px;
 }
 
