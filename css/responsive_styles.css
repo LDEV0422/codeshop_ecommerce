@@ -1,4 +1,15 @@
 /* RESPONSIVE STYLESHEET */
+/* Banner */
+@media screen and (max-width: 450px){
+    header .banner h1 {
+        font-size: 2rem;
+    }
+    header .banner button {
+        margin: 40px 30px;
+        font-size: 18px;
+    }
+}
+/* Products Section */
 @media screen and (max-width: 576px) {
     .products-section .card .card-img {
         width: 250px;
@@ -8,11 +19,8 @@
         width: inherit;
     }
 }
-
+/* Nav + Contact Section */
 @media screen and (max-width: 805px){
-    .contact-section{
-        width: 80vw;
-    }
     header nav{
         height: 150px;
     }
@@ -31,6 +39,7 @@
         font-size: 2rem;
         margin: 15px;
     }
+    .contact-section{
+        width: 80vw;
+    }
 }
-
-/* TODO: responsive banner (font size and button) */

@@ -24,7 +24,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* depend on browsers */
+    /* depends on browsers */
     scrollbar-color: var(--color3) var(--color4);
     /* if you use anchors to the page's sections */
     scroll-behavior: smooth;
@@ -97,6 +97,7 @@ button {
     border: none;
     border-radius: 5px;
     outline: none;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.5);
 }
 
 li a:hover {
@@ -109,8 +110,6 @@ header nav {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--color7);
     padding: 10px;
-    /* display: flex;
-    justify-content: space-between; */
     align-items: center;
     /* fixed navbar */
     overflow: hidden;
@@ -122,7 +121,7 @@ header nav {
 }
 
 /* Normal Nav Bar */
-header nav .normal-nav{
+header nav .normal-nav {
     display: flex;
     justify-content: space-between;
 }
@@ -165,9 +164,10 @@ header nav .onglets input {
 /* End Normal Nav Bar */
 
 /* Responsive Nav Bar */
-header nav .responsive-nav{
+header nav .responsive-nav {
     display: none;
 }
+
 /* End Responsive Nav Bar */
 
 /* END NAVBAR */
@@ -220,7 +220,7 @@ header .banner button a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-} 
+}
 
 
 .products-section .card {
@@ -228,6 +228,7 @@ header .banner button a {
     box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
     border-radius: 5px;
     border: 0.03px solid rgb(0 0 0 / 0.1);
+    cursor: pointer;
 }
 
 .products-section .card .card-img {
@@ -265,7 +266,7 @@ select {
     margin: 10px 0;
 }
 
-.contact-section .form-block fieldset{
+.contact-section .form-block fieldset {
     margin: 20px 0;
     border: none;
     /* the element is in row originally so use align */
@@ -273,6 +274,7 @@ select {
 }
 
 /* end form borders */
+
 .contact-section .form-block fieldset legend {
     margin: 0 auto;
 }
