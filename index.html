@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main_styles.css">
 </head>
 
-<body>
+<body id="top">
     <!-- Header -->
     <header>
         <!-- Navbar -->
@@ -32,12 +32,13 @@
                 </ul>
                 <!-- Search bar -->
                 <form>
-                    <input type="search" placeholder="Search">
+                    <input type="search" placeholder="Search &#128269;">
                 </form>
                 <div class="nav-icon">
                     <a href="#"><i class="far fa-heart"></i>
                     </a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i>
                     </a>
                 </div>
             </div>
@@ -47,7 +48,8 @@
         <!-- Banner -->
         <div class="banner">
             <h1>Buy your way to a better code</h1>
-            <button>Discover our products <i class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+            <button><a href="#productsSection"> Discover our products <i
+                        class="fa-solid fa-magnifying-glass-arrow-right"></i></a></button>
         </div>
         <!-- End Banner -->
     </header>
@@ -59,18 +61,16 @@
         <div class="section-title">
             <h2>Our selection of products</h2>
         </div>
-        <section class="products-section">
+        <section class="products-section" id="productsSection">
             <div class="card">
                 <div class="card-img">
                     <img src="./assets/products/product1_pop-out-menu.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Pop-Out Menu 01</h4>
-                    <h4 class="price">&euro;120</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Pop-Out Menu 01</h4>
+                    <h4 class="price">&euro; 120</h4>
                     <p>
-                        Navigation plugin item
+                        Navigation plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -79,13 +79,11 @@
                 <div class="card-img">
                     <img src="./assets/products/product2_alternating-layout.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Alternating Layout 02</h4>
-                    <h4 class="price">&euro;150</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Alternating Layout 02</h4>
+                    <h4 class="price">&euro; 150</h4>
                     <p>
-                        Summary plugin item
+                        Summary plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -94,13 +92,11 @@
                 <div class="card-img">
                     <img src="./assets/products/product3_testimonials-slider.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Testimonials 01</h4>
-                    <h4 class="price">&euro;115</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Testimonials 01</h4>
+                    <h4 class="price">&euro; 115</h4>
                     <p>
-                        Slider plugin item
+                        Slider plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -109,13 +105,11 @@
                 <div class="card-img">
                     <img src="./assets/products/product4_loading-screen.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Loading Screen</h4>
-                    <h4 class="price">&euro;98</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Loading Screen</h4>
+                    <h4 class="price">&euro; 98</h4>
                     <p>
-                        Custom plugin item
+                        Custom plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -124,13 +118,11 @@
                 <div class="card-img">
                     <img src="./assets/products/product5_hover.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Hover 01</h4>
-                    <h4 class="price">&euro;68</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Hover 01</h4>
+                    <h4 class="price">&euro; 68</h4>
                     <p>
-                        Blog plugin item.
+                        Blog plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -139,13 +131,11 @@
                 <div class="card-img">
                     <img src="./assets/products/product6_hover-list.gif" alt="product img">
                 </div>
-                <div class="card-header">
-                    <h4 class="title">Hover List</h4>
-                    <h4 class="price">&euro;43</h4>
-                </div>
                 <div class="card-body">
+                    <h4 class="title">Hover List</h4>
+                    <h4 class="price">&euro; 43</h4>
                     <p>
-                        Summary plugin item.
+                        Summary plugin
                     </p>
                     <button><i class="fa-solid fa-cart-plus"></i></button>
                 </div>
@@ -154,16 +144,83 @@
         <!-- End Product Cards -->
         <!-- Contact Form -->
         <div class="section-title">
-            <h2>Let Us Know About Our Products</h2>
+            <h2>Let us know about our products</h2>
         </div>
         <section class="contact-section" id="contactSection">
-
+            <form>
+                <div class="form-block">
+                    <legend class="required">*All fields are required*</legend>
+                    <label for="">Full Name*</label>
+                    <input type="text" required>
+                    <label for="">E-mail Address*</label>
+                    <input type="text" required>
+                    <!-- TODO : add e-mail validation with javascript -->
+                    <label for="">Please Confirm E-mail*</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-block">
+                    <fieldset>
+                        <legend>Object*:</legend>
+                        <select name="inquiries" id="inquiry-select" required>
+                            <option value=""> - Please select an option - </option>
+                            <option value="customer-support">Customer Support</option>
+                            <option value="orders">Purchase Orders</option>
+                            <option value="returns">Returns</option>
+                            <option value="suggestion">Suggest an item for us to stock</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="form-block">
+                    <label for="">Your message*</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here"
+                        required></textarea>
+                </div>
+                <div class="form-block">
+                    <!-- TODO GDPR checkbox -->
+                    <p class="gdpr-text">
+                        Your <strong>Personal Data</strong> are processed by the CodeShop to manage your request, and
+                        for <strong>statistical analysis</strong> and <strong>customer knowledge</strong> purposes
+                        within The CodeShop. This information is also used to personalise the services that we offer
+                        you, notably as part of our <strong>commercial prospection</strong> operations.
+                    </p>
+                    <div class="gdpr-consent">
+                        <input type="checkbox" id="gdpr" name="gdpr-consent" value="gdpr" required>
+                        <label for="gdpr">
+                            <p>I agree to the <a href="">Terms and Conditions</a>.</p>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Send</button>
+            </form>
         </section>
         <!-- End Contact Form -->
     </div>
-
     <!-- End Main Section -->
-    <!-- TODO: ADD CONTACT FORM AND FOOTER -->
+    <!-- Back to top -->
+    <div class="back-top">
+        <a href="#top" class="back-top-link"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    <!-- End Back To Top -->
+    <!-- Footer -->
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="copyright">
+            <img src="assets/brand/logo_whitename.png" alt="copyright img">
+            <span>&copy;2022, theCodeShop, Inc. All rights reserved.</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
 </body>
 
 </html>

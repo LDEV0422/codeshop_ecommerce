@@ -1,0 +1,342 @@
+/******* GLOBAL STYLESHEET *******/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+/*** GLOGAL ***/
+:root {
+    /* dark grey */
+    --color1: #262626;
+    /* grey white */
+    --color2: #ededed;
+    /* electric blue */
+    --color3: #232ed1;
+    /* dark blue */
+    --color4: #101d42;
+    /* black blue */
+    --color5: #0d1317;
+    /* salmon */
+    --color6: #ff595e;
+    /* white */
+    --color7: #fff;
+}
+
+* {
+    /* global config for browsers */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* depend on browsers */
+    scrollbar-color: var(--color3) var(--color4);
+    /* if you use anchors to the page's sections */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--color1);
+    word-wrap: break-word;
+}
+
+/* Back To Top */
+.back-top {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+}
+.back-top-link {
+    position: -webkit-fixed;
+    /* for Safari */
+    position: fixed;
+    top: 90vh;  
+    color: var(--color6);
+    font-size: 30px;
+    right: 15px;
+}
+/* End Back To Top */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a,
+button {
+    transition: all ease-in-out;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    background-color: var(--color3);
+    color: var(--color7);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav li a:hover {
+    text-decoration: underline solid var(--color6) 2px;
+    opacity: 1;
+}
+
+/* NAVBAR */
+header nav {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color7);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* fixed navbar */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav .onglets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav .nav-logo {
+    display: inline-block;
+    width: 120px;
+}
+
+header nav img {
+    width: inherit;
+    height: auto;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav .onglets>ul li,
+form,
+header nav .nav-icon a {
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Search Bar */
+header nav .onglets input {
+    background-color: var(--color2);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* END NAVBAR */
+
+/* BANNER */
+header .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+header .banner h1 {
+    font-size: 3rem;
+}
+
+header .banner button {
+    margin: 40px 30px;
+    font-size: 20px;
+}
+
+/* END BANNER */
+
+/* MAIN CONTAINER */
+.main-container {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* SECTIONS */
+.section-title {
+    margin-top: 150px;
+}
+
+/* PRODUCTS SECTION */
+.products-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0;
+    padding: 1rem;  */
+}
+
+.products-section .card {
+    margin: 10px 5px;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    border: 0.03px solid rgb(0 0 0 / 0.1);
+}
+
+.products-section .card .card-img {
+    background-color: var(--color2);
+}
+
+.products-section .card .card-body>h4,
+p,
+button {
+    margin: 15px 0;
+}
+
+/* END PRODUCTS SECTION */
+
+/* CONTACT SECTION */
+.contact-section {
+    width: 50vw;
+    margin: 30px auto;
+}
+
+.contact-section .form-block {
+    display: flex;
+    flex-direction: column;
+}
+
+/* form borders */
+.contact-section .form-block>input,
+textarea,
+select {
+    padding: 10px 0;
+    border: 0.03px solid rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    background-color: var(--color2);
+    margin: 10px 0;
+}
+
+.contact-section .form-block fieldset {
+    margin: 20px 0;
+    border: none;
+}
+
+/* end form borders */
+.contact-section .form-block fieldset legend {
+    margin: 0 auto;
+}
+
+.contact-section .form-block select {
+    color: var(--color1);
+    outline: 1px solid var(--color6);
+    cursor: pointer;
+}
+
+.contact-section .form-block>select,
+textarea::placeholder {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* required field indication */
+.contact-section .form-block .required {
+    color: var(--color6);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-section .form-block .gdpr-text {
+    font-size: 1rem;
+}
+
+.contact-section .form-block .gdpr-consent {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact-section .form-block .gdpr-consent input {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contact-section .form-block .gdpr-consent a {
+    color: var(--color6);
+}
+
+/* END CONTACT SECTION */
+/* END SECTIONS */
+/* END MAIN CONTAINER */
+
+/* FOOTER */
+footer {
+    background-color: var(--color5);
+    color: var(--color7);
+}
+
+footer a {
+    color: var(--color7);
+}
+
+/* legal navigation */
+footer .links {
+    background-color: var(--color3);
+    padding: 0.8em;
+    text-align: center;
+}
+
+footer .links ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer .links ul li a {
+    text-decoration: underline solid var(--color6) 2px;
+    max-width: 80px;
+}
+
+/* social */
+footer .social {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px auto;
+}
+
+footer .social i {
+    margin: auto 10%;
+}
+
+/* copyright */
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright img {
+    /* if font-size = 18px, 3em = 3*18 = 54px */
+    width: 3em;
+}
+
+/* END FOOTER */
