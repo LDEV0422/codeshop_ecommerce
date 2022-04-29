@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
     <meta charset="UTF-8">
@@ -12,39 +12,51 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./css/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/mobile_styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive_styles.css">
 </head>
 
-<body >
+<body>
     <!-- Header -->
-    <header id="top">
+    <header>
         <!-- Navbar -->
-        <nav >
-            <a href="#" class="nav-logo">
-                <img src="./assets/brand/logo_blackname.png" alt="codeshop logo">
-            </a>
-            <div class="onglets">
-                <ul>
-                    <li class="nav-link"><a href="#">New Arrivals</a></li>
-                    <li class="nav-link"><a href="#">Sale</a></li>
-                    <li class="nav-link"><a href="#">Gifts</a></li>
-                    <!-- Anchor to Contact Section -->
-                    <li class="nav-link"><a href="#contactSection">Contact Us</a></li>
-                </ul>
-                <!-- Search bar -->
-                <form>
-                    <input type="search" placeholder="Search &#128269;">
-                </form>
-                <div class="nav-icon">
-                    <a href="#"><i class="far fa-heart"></i>
-                    </a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#"><i class="fa-solid fa-user"></i>
-                    </a>
+        <nav>
+            <div class="normal-nav">
+                <a href="#" class="nav-logo">
+                    <img src="./assets/brand/logo_blackname.png" alt="codeshop logo">
+                </a>
+                <div class="onglets">
+                    <ul>
+                        <li class="nav-link"><a href="#">New Arrivals</a></li>
+                        <li class="nav-link"><a href="#">Sale</a></li>
+                        <li class="nav-link"><a href="#">Gifts</a></li>
+                        <!-- Anchor to Contact Section -->
+                        <li class="nav-link"><a href="#contactSection">Contact Us</a></li>
+                    </ul>
+                    <!-- Search bar -->
+                    <form>
+                        <input type="search" placeholder="Search &#128269;">
+                    </form>
+                    <div class="nav-icon">
+                        <a href="#"><i class="far fa-heart"></i>
+                        </a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!-- Responsive nav bar -->
+            <div class="responsive-nav">
+                <img src="./assets/brand/logo_blackname.png" alt="codeshop logo">
+                <div class="responsive-icons">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>    
+                </div>
+            </div>
+            <!-- End Responsive nav bar -->
         </nav>
         <!-- End Navbar -->
+        
 
         <!-- Banner -->
         <div class="banner">

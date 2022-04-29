@@ -1,0 +1,36 @@
+/* RESPONSIVE STYLESHEET */
+@media screen and (max-width: 576px) {
+    .products-section .card .card-img {
+        width: 250px;
+        height: 250px;
+    }
+    .products-section .card .card-img img{
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 805px){
+    .contact-section{
+        width: 80vw;
+    }
+    header nav{
+        height: 150px;
+    }
+    header nav .normal-nav{
+        display: none;
+    }
+    header nav .responsive-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav .responsive-nav img{
+        width: 20%;
+    }
+    header nav .responsive-nav .responsive-icons i{
+        font-size: 2rem;
+        margin: 15px;
+    }
+}
+
+/* TODO: responsive banner (font size and button) */

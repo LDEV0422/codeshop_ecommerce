@@ -109,8 +109,8 @@ header nav {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--color7);
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     /* fixed navbar */
     overflow: hidden;
@@ -119,6 +119,12 @@ header nav {
     width: 100%;
     /* ANCHOR SCROLL TO SECTION */
     height: 200px;
+}
+
+/* Normal Nav Bar */
+header nav .normal-nav{
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav .onglets {
@@ -155,6 +161,14 @@ header nav .onglets input {
     border: none;
     border-radius: 30px;
 }
+
+/* End Normal Nav Bar */
+
+/* Responsive Nav Bar */
+header nav .responsive-nav{
+    display: none;
+}
+/* End Responsive Nav Bar */
 
 /* END NAVBAR */
 
