@@ -6,3 +6,4 @@ E-commerce project with HTML and CSS (singlepage, homepage):
 - Responsive 📱💻
 - Flat style design ⬜
 
+Visualization page: https://ldev0422.github.io/codeshop_ecommerce/
